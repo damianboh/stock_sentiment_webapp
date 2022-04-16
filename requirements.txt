@@ -5,4 +5,3 @@ nltk
 urllib3
 bs4
 plotly
-json
