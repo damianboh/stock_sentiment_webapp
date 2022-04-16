@@ -7,6 +7,7 @@ import plotly
 import plotly.express as px
 import json # for graph plotting in website
 # NLTK VADER for sentiment analysis
+import nltk
 nltk.downloader.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
