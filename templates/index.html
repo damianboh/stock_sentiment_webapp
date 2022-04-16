@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<body style="font-family:arial, sans-serif", style="width: 70%">
+	<center>
+		<h1 style="background:lightblue;padding:10px">
+			Bohmian's Stock Sentiment Analyzer
+		</h1>
+		
+		<h3>Enter a Stock Ticker Symbol to See the Hourly and Daily Sentiment Scores of the Stock</h3>
+
+			<form action="sentiment" method="POST" align="center">
+					
+			<b>Stock Ticker Symbol: </b>	
+				<input id="text_field" name="ticker" type="text" required> 
+				<br><br>
+				
+					<input id="submit_button" type="Submit">
+				
+			</form>
+		<p>
+			The sentiment is obtained by performing sentimental analysis on recent news headlines using the 
+			<a href="https://www.nltk.org/_modules/nltk/sentiment/vader.html">NLTK Sentiment Vader Python library</a>.<br><br>
+			The recent news headlines are obtained from <a href="https://finviz.com">FinViz website</a>.
+		</p>
+	</center>
+</body>
+</html>
